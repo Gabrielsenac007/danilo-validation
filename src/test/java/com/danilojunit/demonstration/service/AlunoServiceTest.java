@@ -29,7 +29,7 @@ public class AlunoServiceTest {
     @DisplayName("Should validity age")
     void testValidacaoIdadeInvalida() {
         AlunoService service = new AlunoService();
-        AlunosDanilo aluno = new AlunosDanilo("1", "João", -1, "3A");
+        AlunosDanilo aluno = new AlunosDanilo("1", "João", 18, "3A");
 
         assertThrows(IllegalArgumentException.class, () -> service.validarIdade(aluno));
     }
