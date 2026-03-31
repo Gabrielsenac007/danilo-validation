@@ -17,9 +17,8 @@ public class AlunosDaniloTest {
     }
 
     @Test
-    //este git
     @DisplayName("Many assertions with assertAll")
-    void testAtributosAluno() {
+    void testAtributosAluno() 
         AlunosDanilo aluno = new AlunosDanilo("10", "Maria", 16, "1C");
 
         assertAll(
