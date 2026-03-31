@@ -17,7 +17,7 @@ public class AlunoService {
     }
 
     public boolean validarIdade(AlunosDanilo aluno) {
-        if (aluno.getIdade() == null || aluno.getIdade() <= 0) {
+        if (aluno.getIdade() == null || aluno.getIdade() <= 20) {
             throw new IllegalArgumentException("Idade inválida");
         }
         return true;
